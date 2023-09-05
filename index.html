@@ -2,21 +2,29 @@
     <head>
         <title>home</title>
         <link rel="stylesheet" href="style.css">
-        <script defer src="script.js"></script>
+        
     </head>
+    <body>
+        <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-database.js"></script>
+        <script defer src="script.js"></script>
     <div class="container">
         <div class="to-do">
             <h2>ChoreCheck: Keep your chores in check <img src="assets/notepad.png" width="50" height="50"></h2>
             <form action="main.html" method="post">
                 <div class="container">
                     <div>
-                  <label for="uname"><b>Username</b></label><br><br>
-                  <input class="login" type="text" placeholder="Enter Username" name="uname" required>
+                  <label for="name"><b>Name</b></label><br><br>
+                  <input class="login" type="text" placeholder="Enter full name" name="name" required><br><br>
+
+                  <label for="email"><b>Email</b></label><br><br>
+                  <input class="login" type="text" placeholder="Enter email" name="email" required>
               
                   <label for="psw"><b>Password</b></label><br><br>
                   <input class="login" type="password" placeholder="Enter Password" name="psw" required>
               
-                  <button type="submit">Login</button>
+                  <button type="submit" onclick="login()">Login</button>
                   <label class='remember'>
                     <input  type="checkbox" checked="checked" name="remember"> Remember me
                   </label>
@@ -26,5 +34,5 @@
               </form>
         </div>
     </div>
-    
+    </body>
 </html>
