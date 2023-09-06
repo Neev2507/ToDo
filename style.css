@@ -7,9 +7,9 @@
 .container{
     width:100%;
     min-height: 100vh;
-    background:linear-gradient(120deg, #0ee3d5,#370489);
+    background:black;
     padding:10px;
-    color:#153677;
+    color:white;
 }
 .to-do{
     width: 100%;
@@ -112,4 +112,10 @@ ul li span:hover{
     font-size:16px;
     cursor:pointer;
     border-radius: 40px;
+}
+.white{
+    color:linear-gradient(120deg, #0ee3d5,#370489);
+}
+.list{
+    color:black;
 }
