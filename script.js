@@ -1,5 +1,6 @@
 const inputBox=document.getElementById('input-box')
 const listContainer=document.getElementById('list-container')
+
 function add_task(){
     if(inputBox.value===''){
         alert('Add a chore to check!'); 
