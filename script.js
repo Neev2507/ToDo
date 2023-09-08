@@ -2,11 +2,16 @@ const inputBox=document.getElementById('input-box')
 const listContainer=document.getElementById('list-container')
 function add_task(){
     if(inputBox.value===''){
-        alert('Add a chore to check!');
+        alert('Add a chore to check!'); 
+        return;
+    }
+    if(finish.value===''){
+        alert('Add your deadline!');
+        return;
     }
     else{
         let li=document.createElement('li');
-        li.innerHTML=inputBox.value;
+        li.innerHTML=inputBox.value+' - '+finish.value;
         listContainer.appendChild(li);
         let span=document.createElement('span');
         span.innerHTML='\u00d7';
